@@ -1,0 +1,5 @@
+.DS_Store
+# Nothing is built here. This repository holds a manifest, docs, and release assets — never a binary
+# in git, which is what keeps a clone under a megabyte.
+*.xcframework
+*.zip

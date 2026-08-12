@@ -1,0 +1,37 @@
+Fresco SDK License
+
+Copyright (c) 2026 Adaptics Limited. All rights reserved.
+
+1. GRANT. Adaptics Limited ("Adaptics") grants you a non-exclusive,
+   non-transferable, worldwide, royalty-free licence to use, reproduce and
+   redistribute the Pantry binary artifact ("the Software"), unmodified,
+   solely as an incorporated component of an application you develop and
+   distribute.
+
+2. RESTRICTIONS. You may not: modify, adapt or create derivative works of the
+   Software; redistribute the Software on a standalone basis or as part of a
+   competing software development kit or user-interface component library;
+   remove or alter any copyright, licence or attribution notice; or use Adaptics
+   or Fresco names, logos or trademarks except as required to comply with
+   clause 4.
+
+3. RESERVATION. All rights not expressly granted are reserved by Adaptics. No
+   rights are granted to the Software's source code.
+
+4. THIRD-PARTY COMPONENTS. The Software incorporates third-party components
+   listed in THIRD-PARTY-LICENSES.md and provided under their own licences.
+   Those licences govern those components, and nothing in this licence limits,
+   restricts or supersedes any right granted by them. You must comply with the
+   attribution requirements set out in that file.
+
+5. NO WARRANTY. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+6. LIMITATION OF LIABILITY. IN NO EVENT SHALL ADAPTICS BE LIABLE FOR ANY CLAIM,
+   DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+   OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+   USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+7. TERMINATION. This licence terminates automatically if you breach it.
+   Clauses 3, 5 and 6 survive termination.
