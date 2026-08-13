@@ -20,7 +20,7 @@ let package = Package(
   dependencies: [
     // Ranges, not exact pins: `fresco-ios` depends on Pantry directly AND on this package, and
     // SwiftPM fails a graph whose two paths to one identity disagree.
-    .package(url: "https://github.com/dropkitchen/fresco-pantry-swift", "1.0.1" ..< "2.0.0"),
+    .package(url: "https://github.com/dropkitchen/fresco-pantry-swift", "0.2.0" ..< "0.3.0"),
     .package(url: "https://github.com/dropkitchen/kitchenos-client-sdk-swift", "1.61.0" ..< "1.62.0")
   ],
   targets: [
