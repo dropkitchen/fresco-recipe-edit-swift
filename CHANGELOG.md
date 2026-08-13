@@ -18,3 +18,9 @@ or linked against. Appended automatically by `fresco-recipe-edit-ios/scripts/pub
 | Pantry | 0.2.0 (built against) |
 | KitchenOS | 1.61.0 (built against) |
 | TCA | 1.26.1 (compiled in) |
+
+Rebuilt and republished on 2026-08-13 against Pantry `0.2.0`. The previous artifact published under
+this same version number had checksum
+`2026fbb7250c69d97ec112fdfa59c70fa235498354bf7527ece2553566f2778b`; anyone who resolved it before
+this date should follow the README's Troubleshooting entry for the fingerprint error it now
+produces.

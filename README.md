@@ -17,7 +17,7 @@ library: you present it, your user completes it, and you get told what happened.
 ```swift
 // Package.swift
 dependencies: [
-    .package(url: "https://github.com/dropkitchen/fresco-recipe-edit-swift", from: "0.1.0")
+    .package(url: "https://github.com/dropkitchen/fresco-recipe-edit-swift", "0.1.0" ..< "0.2.0")
 ],
 targets: [
     .target(name: "YourApp", dependencies: [
@@ -25,6 +25,10 @@ targets: [
     ])
 ]
 ```
+
+Recipe Edit hasn't reached `1.0.0` yet, so a minor release is where we reserve the right to break
+the contract; the range stops before `0.2.0` rather than before `1.0.0`, and you should widen it
+only once you've tried the new minor yourself.
 
 In Xcode: **File → Add Package Dependencies…** and paste
 `https://github.com/dropkitchen/fresco-recipe-edit-swift`.
@@ -144,6 +148,13 @@ built against in [CHANGELOG.md](CHANGELOG.md).
 so replacing the bytes behind a tag would break every consumer already pinned to it. A bad release
 is superseded by a new patch version and marked as superseded in the changelog.
 
+The one dated exception is `v0.1.0` itself. It was deleted and rebuilt against Pantry `0.2.0` on
+2026-08-13, then republished under the same number rather than superseded — safe only because
+nothing outside this repo's own sample host had resolved it yet. The changelog's `v0.1.0` entry
+records the rebuild and the checksum it replaced; if you resolved the earlier build, see
+Troubleshooting below. The absolute guarantee above resumes the instant the first partner
+integrates: from that point on, nothing is deleted or re-pointed, ever.
+
 ## Troubleshooting
 
 **`multiple packages … declare targets with a conflicting name: 'KitchenOS'`**
@@ -159,6 +170,22 @@ from the URL, so a `git@` form, a trailing `.git`, or a different repository nam
 **`no such module 'Pantry'`** — you are depending on the binary target rather than the package
 product. Use `.product(name: "RecipeEdit", package: "fresco-recipe-edit-swift")`, exactly as in the
 Install snippet; that is what pulls in the frameworks Recipe Edit needs at launch.
+
+**`Revision … does not match previously recorded value …`**
+
+```
+error: 'fresco-recipe-edit-swift': Revision d8142f62… for fresco-recipe-edit-swift
+version 0.1.0 does not match previously recorded value 76cdba15…
+```
+
+`v0.1.0` was rebuilt and republished on 2026-08-13. If you resolved the earlier build, SwiftPM's
+trust-on-first-use fingerprint still points at that old revision, kept separately from the artifact
+cache, and it fails closed rather than silently re-resolving. Clear it and try again:
+
+```bash
+rm -f ~/.swiftpm/security/fingerprints/fresco-recipe-edit-swift-*.json
+rm -rf .build
+```
 
 **Source is not available.** This repository holds a manifest and release assets. That is
 deliberate — the artifact is pre-compiled so that our internal dependency versions can never
