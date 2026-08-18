@@ -24,3 +24,16 @@ this same version number had checksum
 `2026fbb7250c69d97ec112fdfa59c70fa235498354bf7527ece2553566f2778b`; anyone who resolved it before
 this date should follow the README's Troubleshooting entry for the fingerprint error it now
 produces.
+
+## v0.2.0 — 2026-08-18
+
+| | |
+|---|---|
+| Checksum | `19cf10707015a71a3b7dd06422d8d79e17a47a3910c0152de34d52b2d394bccf` |
+| Zipped |  37M |
+| Device slice |  41M |
+| Simulator slice |  81M |
+| Built with | Xcode 26.5 |
+| Pantry | 0.3.0 (built against) |
+| KitchenOS | 1.61.0 (built against) |
+| TCA | 1.26.1 (compiled in) |
