@@ -26,8 +26,8 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "RecipeEdit",
-      url: "https://github.com/dropkitchen/fresco-recipe-edit-swift/releases/download/v0.2.0/RecipeEdit.xcframework.zip",
-      checksum: "19cf10707015a71a3b7dd06422d8d79e17a47a3910c0152de34d52b2d394bccf"
+      url: "https://github.com/dropkitchen/fresco-recipe-edit-swift/releases/download/v0.2.1/RecipeEdit.xcframework.zip",
+      checksum: "71bab8623d08c7c58c95d9ea49405fff62afd23b1c12a07e7c6bd1bebbb2bb3e"
     ),
     .target(
       name: "RecipeEditWrapper",
