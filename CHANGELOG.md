@@ -50,3 +50,16 @@ produces.
 | Pantry | 0.3.0 (built against) |
 | KitchenOS | 1.61.0 (built against) |
 | TCA | 1.26.1 (compiled in) |
+
+## v0.3.0 — 2026-09-07
+
+| | |
+|---|---|
+| Checksum | `36a811e14acbbae54b1a64a25433a0a1dcb7d042535c1d53ddd1aa0a4ebb3365` |
+| Zipped |  25M |
+| Device slice |  41M |
+| Simulator slice |  40M |
+| Built with | Xcode 26.5 |
+| Pantry | 0.3.0 (built against) |
+| KitchenOS | 2.0.0 (built against) |
+| TCA | 1.26.1 (compiled in) |

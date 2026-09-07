@@ -21,13 +21,13 @@ let package = Package(
     // Ranges, not exact pins: `fresco-ios` depends on Pantry directly AND on this package, and
     // SwiftPM fails a graph whose two paths to one identity disagree.
     .package(url: "https://github.com/dropkitchen/fresco-pantry-swift", "0.3.0" ..< "0.4.0"),
-    .package(url: "https://github.com/dropkitchen/kitchenos-client-sdk-swift", "1.61.0" ..< "1.62.0")
+    .package(url: "https://github.com/dropkitchen/kitchenos-client-sdk-swift", "2.0.0" ..< "2.1.0")
   ],
   targets: [
     .binaryTarget(
       name: "RecipeEdit",
-      url: "https://github.com/dropkitchen/fresco-recipe-edit-swift/releases/download/v0.2.1/RecipeEdit.xcframework.zip",
-      checksum: "71bab8623d08c7c58c95d9ea49405fff62afd23b1c12a07e7c6bd1bebbb2bb3e"
+      url: "https://github.com/dropkitchen/fresco-recipe-edit-swift/releases/download/v0.3.0/RecipeEdit.xcframework.zip",
+      checksum: "36a811e14acbbae54b1a64a25433a0a1dcb7d042535c1d53ddd1aa0a4ebb3365"
     ),
     .target(
       name: "RecipeEditWrapper",
