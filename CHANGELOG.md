@@ -91,3 +91,17 @@ produces.
 | Pantry | 0.5.0 (built against) |
 | KitchenOS | 2.2.1 (built against) |
 | TCA | 1.26.1 (compiled in) |
+
+## v0.6.0 — 2026-10-09
+
+| | |
+|---|---|
+| Checksum | `23c97d75cd78e54af8d568cf1ce2f2f700e24f3c0885a01ecda15e52dccffa6c` |
+| Zipped |  17M |
+| Device slice |  30M |
+| Simulator slice |  30M |
+| Built with | Xcode 27.0 |
+| Signed by | Apple Distribution: Adaptics Limited (RH9GNXSHK5) |
+| Pantry | 0.6.1 (built against) |
+| KitchenOS | 2.2.1 (built against) |
+| TCA | 1.26.1 (compiled in) |
