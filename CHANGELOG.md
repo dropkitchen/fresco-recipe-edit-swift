@@ -161,3 +161,17 @@ produces.
 | Pantry | 1.1.0 (built against) |
 | KitchenOS | 2.5.0 (built against) |
 | TCA | 1.26.1 (compiled in) |
+
+## v1.3.1 — 2026-11-06
+
+| | |
+|---|---|
+| Checksum | `0917bc94305cb35adf65fd357c19e7a95812d93088fd0f897a6e9d6b17bd5d29` |
+| Zipped |  16M |
+| Device slice |  29M |
+| Simulator slice |  29M |
+| Built with | Xcode 27.2 |
+| Signed by | Apple Distribution: Adaptics Limited (RH9GNXSHK5) |
+| Pantry | 1.1.0 (built against) |
+| KitchenOS | 2.8.1 (built against) |
+| TCA | 1.26.1 (compiled in) |
